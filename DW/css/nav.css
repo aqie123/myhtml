@@ -1,0 +1,88 @@
+	    *{
+	    	margin:0;
+	    	padding:0;
+	    }
+		.nav{
+			width:1190px;
+			height:480px;
+			margin:0 auto;
+			position:relative;
+		}
+		/*左边区块*/
+		.nav .navleft{	
+			width:190px;
+			height:480px;
+			float:left;
+			background-color: #767373;
+		}
+		.nav .navleft ul{
+			margin:15px 0;
+			overflow: hidden;
+		}
+		.nav .navleft ul li{
+
+			list-style: none;
+			width:190px;
+			height:30px;
+			padding-left:15px;/*text-indent*/
+			line-height: 30px;	
+		}
+		.nav .navleft ul li.curr{
+			background:#B9B5B5;
+		}
+		.nav .navleft ul li a{
+			font-size: 14px;
+			color:#fff;
+			font-family: "微软雅黑";
+			text-decoration: none;
+		}
+		.nav .navleft ul li a:hover{
+			color:#FF0000;
+		}
+		/*隐藏的右边区块*/
+		.nav .navfloat{
+			width:1000px;
+			height:auto;
+			border:1px solid #fff;
+			box-shadow: 4px 0px 5px #A59292;
+			position:absolute;
+			top:0;
+			left:190px;
+			z-index: 3;
+		
+		}
+		.nav .navfloat ul li{
+			float:left;
+			list-style: none;
+			display: none;
+        }
+		.nav .navfloat ul li.navrshow{
+			display: block;
+		}
+		/*中间区块*/
+		.nav .navmid{
+			width:790px;
+			height:480px;
+			float:left;
+			margin:0 10px;
+		}
+		.nav .navmid .banner{
+			width:790px;
+			height:340px;
+		}
+		.nav .navmid .btmpic{
+			width:800px;
+			height:130px;
+            margin-top: 10px;
+
+		}
+		.nav .navmid .btmpic img{
+			float:left;
+			margin-right: 10px;
+		}
+		/*右边区块*/
+		.nav .navright{
+            width:190px;
+            height:480px;
+            float:left;
+		}

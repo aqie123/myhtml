@@ -1,0 +1,45 @@
+*{
+	margin:0;
+	padding: 0;
+}
+#debuglog{
+	
+	font-size: 20px;
+}
+.hilite{
+	color: yellow;
+}
+#top{
+	width: 1000px;
+	height:500px;
+	margin:0 auto;
+	background: url('../picture/3_img/1.jpg');
+}
+#top ul{
+	width: 900px;
+	height:400px;
+   margin:100px auto;
+}
+#top ul li{
+
+    padding: 14px;
+	float: left;
+	list-style: none;
+}
+
+.output{
+	font-weight: bold;
+}
+#payment{
+	text-decoration:underline;
+}
+#graph{
+	border:solid black 1px;
+}
+table{
+	background-color: #eee;
+	margin:50px auto;
+}
+th td{
+	vertical-align:top;        /* 表格单元格对齐方式为顶端对齐*/
+}

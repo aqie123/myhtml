@@ -1,0 +1,253 @@
+
+*{margin:0; padding:0;}
+body{
+	background: url('../picture/7_lern/3.jpg') fixed no-repeat center ;
+	background-size: cover;
+}
+.top{
+	
+	background:green;
+}
+.top .knav{
+	height:70px;
+	background:gray;
+	list-style: none;
+	line-height: 50px;
+
+}
+.top .knav table{
+	margin:0 auto;
+	
+	border:1px solid red;
+}
+.top .knav table td{
+
+	background:url(../picture/7_img/3.jpg);
+}
+.top .knav a{
+	text-decoration:none;
+	color:#fff;
+
+}
+.top .knav a:hover{
+	text-decoration:none;
+	color:#000;
+	font-weight:bold;
+
+}
+td{
+	color:red;
+	border:1px solid green;
+}
+
+.wraper{
+	width:90%;
+   /* background: red;*/
+	margin:auto;
+}
+.p1{
+
+	/*width: 100%;*/
+	height:320px;
+	padding:20px;
+	border:5px solid red;
+	margin:0 auto;
+
+}
+.p1 .btn{                  /*左边区块*/
+	width: 200px;
+	height:300px;
+	padding: 10px;
+	float:left;
+	line-height: 70px;
+	border:1px solid green;
+
+}
+.p1 .cpicture{               /*右边区块*/
+	width: 200px;
+	height:300px;
+	padding: 10px;
+	float:right;
+	line-height: 70px;
+	border:1px solid green;
+	/*position:absolute;
+	top:20px;
+	right:20px;*/
+}
+.p1 .Tnav{                  /*中间区块*/
+	/*float:left;
+	padding:0 100px;*/
+
+	width:700px;
+	height:320px;
+	border:1px solid green;
+}
+
+.Tnav ul{
+	width:650px;
+	height:300px;
+	margin:0 auto;
+	border:2px  red;
+	background: url('../picture/7_lern/4.jpg');
+	border:1px solid red;
+	
+}
+
+.Tnav ul li{
+	width:80px;
+	height:130px;
+	float:left;
+	list-style:none;
+	
+	border-radius: 20px;
+	border:2px  green;
+	margin:12px 0px 0px 32PX;
+    text-align: center;
+    line-height: 130px;
+    font-family: '微软雅黑';
+    font-size: 20px;
+    background: url('../picture/7_lern/3.jpg');
+    color: black;
+}
+li a{
+	text-decoration:none;
+}
+.p2{
+	border:2px solid #000;
+	margin-top: 20px;
+	height:100px;
+}
+.p2 .cleft1{
+	width:100%;
+	height:100px;
+	background-color: #000;
+	float:left;
+	
+}
+
+
+.p3{
+
+	border:5px solid red;
+	height: 700px;
+	padding: 0px;
+	
+
+}
+.l1{            /*左边区块*/
+float:left;
+width:20px;
+height:700px;
+background:#00f;
+_margin-right:-3px;
+}
+.r1{/*这个是由顺学的，先左右后中间*//*右边区块*/
+width:20px;
+height:700px;
+float:right;
+
+background:#0f0;
+_margin-left:-3px;
+}
+.c1{                /*中间区块 六边形导航盒子*/
+height:700px;
+background: url(../picture/7_img/bodyBg.jpg) fixed;
+margin:0 20px;
+
+padding: 0px;
+overflow: hidden; /*块级元素格式化*/
+border:1px solid red;
+}
+
+.nav{
+	width:550px;
+	height:350px;
+	border:1px solid green;
+	margin:0px auto;
+	overflow: hidden; /*块级元素格式化*/
+	
+
+}
+.middle{
+	margin:0 auto;
+
+}
+.nav ul{
+	border:1px solid red;
+}
+
+
+.nav ul li{                      /* 混合选择器*/
+	position:relative;/*相对定位*/
+	list-style: none;
+	width:99px;
+	height:56px;
+	background: rgba(0,0,0,0.5);
+	float: left;
+	margin:30px 5px;
+	text-align:center;
+}
+
+.nav ul li:hover img{/* 伪类，鼠标移上去*/
+  -webkit-transform: rotate(360deg) scale(1.5);
+   -moz-transform: rotate(360deg) scale(1.5);
+   -ms-transform: rotate(360deg) scale(1.5);
+   -o-transform: rotate(360deg) scale(1.5);
+   transform: rotate(360deg) scale(1.5);
+}
+.six{
+    margin-left:64px !important;/*提高权重*/
+}
+
+/* before 相当于在盒子内容前面，添加内容*/
+.nav ul li:before,.nav ul li:after{/* 两个伪类*/
+    content:"";/*伪类必须加这个属性*/
+    position:absolute;
+    left:0;
+    top:0;
+    width:99px;
+	height:56px;
+	background: rgba(0,0,0,0.5);
+	-webkit-transform: rotate(60deg);/* 谷歌内核前缀*/
+	-moz-transform: rotate(60deg);/* 火狐内核前缀*/
+	-ms-transform: rotate(60deg);/* IE内核前缀*/
+	-o-transform: rotate(60deg);/* 欧朋内核前缀*/
+	transform: rotate(60deg);/* 标准前缀*/
+
+}
+.nav ul li:after{
+	
+	-webkit-transform: rotate(-60deg);/* 谷歌内核前缀*/
+	-moz-transform: rotate(-60deg);/* 火狐内核前缀*/
+	-ms-transform: rotate(-60deg);/* IE内核前缀*/
+	-o-transform: rotate(-60deg);/* 欧朋内核前缀*/
+	transform: rotate(-60deg);/* 标准前缀*/
+
+}
+.nav ul li img{
+	position: absolute;
+	z-index: 999;/* 层级越大优先级越大*/
+	/*margin-left:-40px;
+	margin-top:-40px;
+	left:50%;
+	top:50%;
+	*/
+	left:0;
+	top:0;
+	right:0; 
+	bottom:0;
+    margin:auto;
+    transition:0.5s;/* cs3 动画过度*/
+}
+/*自适应居中
+第一种：margin:50%;padding
+第二种：position:absolute;left:%;top:%;
+第三种：positionabsolute;
+        left:50%;top:50%;
+        margin-left:-40px;margin-top:-40px;
+第四种：positionabsolute;
+        left:0;top:0;right:0;bottom:0;
+        margin:auto;
+
+*/
+

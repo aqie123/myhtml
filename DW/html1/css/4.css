@@ -1,0 +1,7 @@
+table{
+	background-color: #eee;
+	margin:50px auto;
+}
+th td{
+	vertical-align:top;        /* 表格单元格对齐方式为顶端对齐*/
+}

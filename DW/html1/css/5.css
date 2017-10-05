@@ -1,0 +1,7 @@
+
+ .pic img{
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    
+	width:100%;
+}
+

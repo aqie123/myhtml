@@ -1,0 +1,163 @@
+*{margin:0;padding: 0}
+.btn{
+	width: 50px;
+	height: 35px;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 10px;
+	right: 50px;
+	color: #fff;
+	font-size: 12px;
+	font-family: '微软雅黑';
+	line-height: 35px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+
+}
+.mask{
+	width: 100%;
+	height:100%;
+	background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+
+}
+.login{
+	width: 600px;
+	height: 439px;
+	background: #fff;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	/*display: none;*/
+	border:1px solid;
+
+}
+.login .title{
+	width:600px;
+	height: 45px;
+	background: #ff9933;
+	line-height: 45px;
+	color: #fff;
+	text-indent: 20px;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+.login .title .close{
+float:right;
+width: 17px;
+height: 17px;
+background: url(../picture/3_img/close.png);
+margin-top: 10px;
+margin-right: 10px;
+
+}
+.login .text{
+	padding: 20px;
+	line-height: 20px;
+}
+.login .lg{
+	width: 600px;
+	height: 300px;
+	margin:0 auto;
+	
+	padding-top:10px;
+}
+.login .lg .name-field,.login .lg .email-field,
+.login .lg .psw-field,.login .lg .psw2-field{
+	width:400px;
+	height:30px;
+	margin:25px auto;
+	border:1px solid;
+	text-align: center;
+	line-height: 30px;/*文字垂直居中*/
+	position: relative;
+}
+.login .lg .sub-field {
+	width:300px;
+	height:30px;
+	margin:20px auto;
+	
+}
+.login .lg input{
+	width:300px;
+	height: 30px;
+	float:right;
+	border:none;
+}
+.login .lg .sub-field input{
+	height:35px;
+}
+
+.login .lg .name-field .name_msg {/*用户名右边说明部分*/
+	position: absolute;
+	top:0px;
+	right:-95px;
+	font-size:3px;
+	text-align: center;
+	width:90px;
+	line-height: 14px;
+}
+.login .lg .name-field .count{/*用户名下边说明*/
+	height:25px;
+
+	line-height: 25px;
+    visibility: hidden;/*下面说明隐藏*/
+    color: #999;
+    font-size: 12px
+
+}
+.login .lg .email-field .email_msg {/*邮箱右边说明部分*/
+	position: absolute;
+	top:0px;
+	right:-95px;
+	font-size:3px;
+	text-align: center;
+	width:90px;    /*记得设置宽度*/
+}
+.login .lg .psw-field .psw_msg {/*密码右边说明部分*/
+	position: absolute;
+	top:0px;
+	right:-95px;
+	font-size:3px;
+	text-align: center;
+	width:90px;
+	line-height: 14px;
+	
+}
+.psw-field .intensity{
+	width:150px;
+	height:25px;
+	text-align: center;
+	margin:0 auto;
+}
+.psw-field .intensity span{
+	width:50px;
+	height:26px;
+	background:#5C5858;
+	display: inline-block;
+
+
+}
+.psw-field .intensity .active{
+	width:50px;
+	height:26px;
+	background:#C611EC;
+}
+.sub-field .sub{
+	background: #3BF107;
+}
+.login .lg .psw2-field .psw2_msg {/*密码确认右边说明部分*/
+	position: absolute;
+	top:0px;
+	right:-95px;
+	font-size:3px;
+	text-align: center;
+	width:90px;
+	line-height: 14px;
+	
+}

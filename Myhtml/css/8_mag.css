@@ -1,0 +1,42 @@
+
+.magnifier{      /*原图区块*/
+	width:440px;
+	height:300px;
+	background:#321695;
+	position: relative;/*参照物*/
+	border:1px solid red;
+}
+.magnifier img{
+	margin-top: 0px;
+}
+.magnifier .move{  /*鼠标移动区块*/
+	clear: both;
+	width: 100px;
+	height: 100px;
+	background:rgba(0,0,0,0.4);
+	position: absolute;
+	left:10px;
+	top:10px;
+	display: none;
+	
+}
+.magnifier .bimg{  /*放大镜区块*/
+	width:440px;
+	height:300px;
+	background: red;
+	position: absolute;
+	left:525px;
+	top:0px;
+	overflow: hidden;
+	display: none;
+	border:1px solid green;
+}
+.magnifier .bimg .b-img{ /*放大图片样式*/
+	width:1936px;
+	height:900px;
+	position: absolute;
+	left:0px;
+	top:0px;
+}
+
+

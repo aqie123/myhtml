@@ -1,0 +1,49 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+.waterfall{
+	width:90%;
+	margin:0 auto;
+	
+	border:1px solid red;
+	
+}
+.waterfall ul{
+	width: 88%;
+	border: 1px black solid;
+	margin:0 auto;
+
+	
+}
+
+.waterfall ul li{
+	/*list-style: none;
+	width:250px;
+	border:1px solid red;
+	float:left;
+	*/
+	width:250px;
+    margin:8px;
+
+	float:left;
+	list-style: none;
+	
+
+    
+
+}
+.waterfall ul li div{
+	
+	width:250px;
+	/*固定高度*/
+	margin-bottom:10px;/*控制每行li 中图片间距*/
+	border:1px solid green;
+	text-align: center; 
+	box-shadow: 11px 7px 15px #003;/*边框阴影*/
+	
+	
+}
+.waterfall ul li img{
+	width: 250px;
+}	

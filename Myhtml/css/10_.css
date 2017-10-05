@@ -1,0 +1,48 @@
+.waterfall{/*有很多图片不知道盒子高度*/
+	width:96%;
+    border:2px solid red;
+    /*1.火狐外边框正常，ie没下边框*/
+	margin:50px auto;
+/*图片左浮动前提，图片宽度相等，高度按原图比例显示,实现了*/
+    position: relative;
+    text-align: center;
+}
+.waterfall ul{
+	/*2.ul相对waterfall居中*/
+	/*position: absolute;
+	margin:auto;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;  这么写不能居中，还会使边框消失*/
+	width: 94%;
+	border: 3px black solid;
+	margin:0 auto;
+	padding: 10px;
+    
+}
+.waterfall ul li{
+	list-style: none;
+	width:250px;
+	height:360px;/*固定高度*/
+	float:left;
+	margin:10px 24px;/*控制li左右移动来居中*/
+	border:1px solid green;
+	text-align: center; 
+	display: inline; 
+	waterfall-shadow: 11px 7px 15px #003;/*边框阴影*/
+	
+/*3.火狐图片贴li左边，ie居中显示，想统一居中*/
+}
+.waterfall ul li img{
+	
+	/*display: block; 这个去掉*/
+} 
+.clear{
+	clear: both;
+
+}
+
+
+
+

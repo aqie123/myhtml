@@ -1,0 +1,103 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+
+
+#header{
+	width: 100%;
+	height: 265px;
+	background: #999933;
+	border-bottom: 2px solid red;
+}
+.top{/* 类选择器*/
+	width: 100%;
+	height: 30px;
+	background: #eee;
+
+
+}
+.h-banner{
+	width: 100%;
+	height: 80px;
+	background: red;
+}
+.wraper{
+	/*width: 1210px;*/
+	width:90%;
+	margin:auto;
+}
+.logo{
+	height: 100px;
+	background: blue;
+}
+.nav{
+	height: 45px;
+	background: #003300;
+}
+#bannner{
+	height: 465px;
+	/*background: red;*/
+}
+#container1{
+	height: 700px;
+	background: green;
+}
+.guess{
+	height:230px;
+	background: #660066;
+}
+.jingdong{
+	height:440px;
+	background: #770077;
+}
+
+
+
+.floor{
+	
+	margin-top: 20px;
+
+}
+
+#footer1{
+	
+	width: 100%;
+	height: 500px;
+	
+ 
+}
+.feature{
+	width: 100%;
+	height: 94px;
+	background: #eee;
+
+
+}
+.f_content{
+	
+	 
+	
+}
+#fixed-nav{
+	position: fixed;/*固定定位*/
+	top: 30%;
+	left: 2.5%;
+	display: none;//隐藏区块
+}
+#fixed-nav ul li{
+	list-style:none;
+	width: 20px;
+	height:30px;
+	background: #fff;
+	text-align: center;/*文本左右对齐*/
+	line-height: 30px;/*行高*/
+	cursor: pointer;/*鼠标的形状*/
+	border-bottom:2px dotted #aaa;/*点状线*/
+}
+#fixed-nav ul li.cur{
+	background: red;
+}

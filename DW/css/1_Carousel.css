@@ -1,0 +1,54 @@
+*{
+	margin:0;
+	padding: 0;
+}
+.banner{
+	width:1146px;
+	height: 440px;
+	background: #fff;
+	margin:50px auto;
+	border:1px solid green;
+	padding: 15px 15px 0 15px;
+	position: relative;
+	
+
+}
+.banner .pic{
+	width:1146px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;//超出隐藏
+}
+.banner .pic ul li{
+	width:1146px;
+	height: 400px;
+	list-style: none;
+	border:1px solid red;
+	position: absolute;
+	left:100%;
+	top: 0;
+}
+.banner .text ul li{
+		list-style: none;
+		float: left;
+		color: #666;
+		font-size: 12px;
+		font-family: '微软雅黑';
+		width:229px;
+		line-height: 35px;
+		text-align: center;
+		cursor: pointer;/*手指形状*/
+
+}
+.bannner .text ul li span{
+	float: right;
+	color: red;
+}
+.car{
+	width: 229px;
+	height: 3px;
+	background-color: red;
+	position: absolute;
+	bottom: -3px;
+	left: 15px;
+}

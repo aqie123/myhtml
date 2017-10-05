@@ -1,0 +1,182 @@
+*{margin:0; padding:0;}
+body{
+	background:url('../picture/8_img/1.jpg') no-repeat  fixed  ;
+/*	background-size:100% ;
+	background-repeat:no-repeat;
+	background-position:centercenter;
+	background-attachment:fixed;*/
+}
+
+/* 百度换肤样式Start*/
+#box{
+	
+	height: 36px;
+	/*border:2px solid red;*/
+	margin: 20px auto ;
+
+}
+#box .miku{/* 绿色椭圆框*/
+	width: 280px;
+	height: 36px;
+	background: green;
+	float:right;
+	border-radius: 20px;
+	position: relative;
+
+}
+#box .miku .al{  /* 文字部分*/
+	color: #fff;
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 32px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Microsoft YaHei';
+}
+.miku .a2{   /* 换肤图片*/
+	width: 32px;
+	height: 32px;
+	background: url('./picture/8_img/1.png');
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+#box .miku a:hover{/*文字鼠标经过变色*/
+	color: red;
+
+}
+#dic{  /* 底部区块*/
+	width: 100%;
+	height: 280px;
+	position: fixed;
+	background-color: #c3c3c3;
+	/*left:0px;
+	bottom: 0px;*/
+	display:none;
+	position: absolute;
+	top: 56px;
+	background: rgba(0,0,0,0.3);/*背景颜色透明*/
+	
+	
+}
+#dic ul{
+	width:724px; 
+	height:200px;
+	margin:20px auto 0px;
+	/*border:2px solid red;*/
+	padding: 0px 0px;
+	
+	
+	
+}
+#dic ul li{  /* 六个小图片*/
+	list-style:none;
+	width:198px;
+	height: 69px;
+	border:1px solid white;
+	float:left;
+	padding: 0px;
+	margin:20px 0px 0px 30px;
+	opacity:0.7; /*图片透明*/
+}
+#dic ul li.on{
+	
+	border:1px solid red;
+}
+/* 百度换肤样式END*/
+
+
+/*qq空间留言板样式开始*/
+.text-main{
+	width:600px;
+	
+	background: #eee;
+	margin:400px auto 0;
+	border-radius:5px;
+	padding: 10px 15px;
+	background: rgba(0,0,0,0.3);/*背景颜色透明*/
+
+}
+.text-main .title{
+	color: red;
+text-align: center;
+font-size:14px;
+line-height: 30px;
+font-family: "微软雅黑";
+}
+.text-main .text{
+	width: 599px;
+	height: 130px;
+	border: 1px solid #ddd;
+	margin:10px auto;
+}
+.text-main .btn-box{
+	position:relative;
+
+}
+.text-main .btn-box img{
+	/*margin-left: 26px;*/
+}
+.text-main .btn-box a{
+	float: right;
+   /* margin-right: 26px;*/
+    padding: 5px 10px;
+    background: #ff6600;
+    color:#fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.text-main .btn-box ul{
+	width: 392px;
+	height: 89px;
+	background: #fff;
+	border:1px solid red;
+	padding: 5px;/*上下为5像素*/
+	position: absolute;/*定位*/
+	left:21px;
+	top:21px;
+	display: none;
+	
+}
+.text-main .btn-box ul li{
+	float: left;
+	list-style: none;
+	margin:3px; 每个想当一个小盒子，外边距
+	/*padding: 2px; 好像没什么区别*/
+}
+.text-main .btn-box ul li img{
+	/*padding: 5px 5px;*/
+}
+.main{
+	width:630px;
+	/*background: white;*/
+	margin:0 auto;
+	
+	
+}
+
+.main .con{
+	width:600px;
+	/*height:200px; 高度去掉，文字自适应*/
+	background:#fff;
+	padding: 0px 15px;
+	margin-top: 20px;
+}
+.main .con .top{
+	width:600px;
+	border-bottom:1px solid #fff000;
+}
+.main .con .top img{
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+
+}
+.main .con .content{
+	color:brown;
+	font-size: 12px;
+	line-height: 30px;
+}
+/*qq空间留言板样式结束*/

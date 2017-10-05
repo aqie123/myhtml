@@ -1,0 +1,35 @@
+*{
+	margin:0;
+	padding:0;
+}
+#box{/*有很多图片不知道盒子高度*/
+	width:1200px;
+    border:2px solid red;
+    /*1.火狐外边框正常，ie没下边框*/
+	margin:50px auto;
+/*图片左浮动前提，图片宽度相等，高度按原图比例显示,实现了*/
+position: relative;
+    }
+ #box ul{
+ 	margin:0 0 0 -600px;
+ 	position: absolute;	
+	left:50%;
+	top:50%;
+	border:1px solid red;
+ }
+
+#box ul li{
+	list-style: none;
+	width:250px;
+	float:left;
+	margin:10px;
+	display: block;
+	border:1px solid green;
+	  
+/*3.火狐图片贴li左边，ie居中显示，想统一居中*/
+}
+#box ul li img{
+	margin-bottom: 20px;
+	/*display: block; 这个去掉*/
+} 
+

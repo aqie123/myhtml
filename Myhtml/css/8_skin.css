@@ -1,0 +1,101 @@
+
+
+/* 百度换肤样式Start*/
+#box{
+	/*border:2px solid red;*/
+	margin: 0px auto;
+	height: 55px;
+	background: rgba(0,0,0,0.8);
+
+}
+#box .miku{/* 绿色椭圆框*/
+	margin:10px auto;
+	width: 175px;
+	height: 36px;
+	background: #800041;
+	float:left;
+	border-radius: 20px;
+	position: relative;/* 参照物*/
+
+}
+#box .miku .al{  /* 文字部分*/
+	color: #fff;
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 32px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Microsoft YaHei';
+}
+.miku .a2{   /* 换肤图片*/
+	width: 32px;
+	height: 32px;
+	/*background: url('../picture/8_img/1.png');*/
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: -6px;
+}
+#box .miku a:hover{/*文字鼠标经过变色*/
+	color: red;
+
+}
+.btn , .btn1{         /* 注册登录页面两个按钮*/
+	margin:10px auto;
+
+	width: 50px;
+	height: 35px;
+	background: rgba(0,0,0,0.5);
+	float:right;
+	color: #fff;
+	font-size: 12px;
+	font-family: '微软雅黑';
+	line-height: 35px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer; /*鼠标指针形状*/
+}
+.btn1{
+	right: 10px;
+}
+#dic{  /* 底部区块*/
+	width: 100%;
+	height: 242px;
+	position: fixed;
+	background-color: #c3c3c3;
+	/*left:0px;
+	bottom: 0px;*/
+	display:none;
+	position: absolute;
+	top: 56px;
+	background: rgba(0,0,0,0.5);/*背景颜色透明*/
+	z-index:9;
+	
+}
+#dic ul{
+	width:724px; 
+	height:200px;
+	margin:20px auto 0px;
+	border:2px solid red;
+	padding: 0px 0px;
+	/**/
+	
+}
+#dic ul li{  /* 六个小图片*/
+	list-style:none;
+	width:198px;
+	height: 69px;
+	border:1px solid white;
+	float:left;
+	padding: 0px;
+	margin:17px 0px 0px 30px;
+}
+#dic ul li img{
+	margin-top: 0px;
+}
+#dic ul li.on{
+	
+	border:1px solid red;
+}
+/* 百度换肤样式END*/

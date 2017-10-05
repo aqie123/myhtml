@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="Keywords" content="关键词123">
+    <meta name="Description" content="描述">
+	
+	<link rel="shortcut icon" href="/picture/1.ico" />
+	<!-- 
+    <link href="./css/taobao2.css" rel="stylesheet" type="text/css" />
+    -->
+    <title>ajax</title>
+</head>
+<body>
+<textarea name="" id="txt1" cols="30" rows="10"></textarea>
+<input type="button" value="查话费" id = "ajaxbtn" >
+	
+
+<script src="./js/jquery-3.1.1.js" type="text/javascript"></script>
+<script src="./js/ajax2.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+
+var ajaxbtn = document.getElementById("ajaxbtn");//按钮
+var otxt = document.getElementById("txt1");//文本
+ajaxbtn.onclick = function(){
+	 loadXMLDoc({//调用上面函数
+	 	//type:'POST',
+	 	type:'GET',
+	 	scriptCharset: 'utf-8',
+	 	urla:'1.php?user=1',
+	 	//data::'user:1',
+	 	success:function(datastr){
+	 		//alert(datastr);
+	 		otxt.innerHTML = datastr;
+	 	},
+	 	error:function(){
+	 		alert("出错");
+	 	}
+
+	 })
+	
+}
+
+
+  
+//alert(1);onclick = loadXMLDoc()
+</script>
+
+</body>
+</html>

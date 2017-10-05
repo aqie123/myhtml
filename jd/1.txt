@@ -1,0 +1,25 @@
+﻿table>(tr>td*4)*3
+ul>li.item$*3
+nav>ul>li.item*5>a
+div#header>ul>li.item*5>a
+<a href=""></a>
+缩写：a:link
+<a href="http://"></a>
+a[href="javascript:void(0);"]
+//引入iframe
+<script type="text/javascript">
+//引入ifram 3.html
+function setIframeHeight(iframe) {
+if (iframe) {
+var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+if (iframeWin.document.body) {
+iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+}
+}
+};
+
+window.onload = function () {
+setIframeHeight(document.getElementById('navframe'));
+};
+</script>
+<iframe src="2.html"  width="100%" id="navframe" scrolling="no" frameborder="0" ></iframe>

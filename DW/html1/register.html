@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="Keywords" content="关键词123">
+<meta name="Description" content="描述">
+<link rel="shortcut icon" href="/picture/1.ico" />
+<!-- 
+<link href="./css/taobao2.css" rel="stylesheet" type="text/css" />
+-->
+<style type="text/css">
+
+</style>
+<title></title>
+</head>
+
+<body>
+
+<script src="./js/jquery-3.1.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+function allowReset(){
+	return window.confirm("确认重置嘛？");
+}
+
+function check1(){
+	if(form1.name.value== ""||form1.address.value==""||form1.email.value==""||form1.password.value==""){
+		alert("您没有完善您的资料");
+	}else{
+		var str = form1.email.value;
+		var regex = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/;
+		  //构造正则表达式检验
+		/*最简单的验证邮箱
+		var  n = str.indexOf("@",1);
+		if((n==-1)||(n==(str.length-1))){  */
+        if(!regex.exec(str)){
+			alert("您的E-mail地址不合法，请重新输入");
+			return false;  //这是什么意思？？？？？？
+		}
+		return window.confirm("确认发送吗？");
+	}
+}
+function show(){
+	var str1 = form1.name.value;
+	var str2 = form1.elements[1].value;
+	var str3 = form1.elements[2].value;
+	alert("姓名："+str1+"\n\r"+"地址"+str2+"\n\r"+"电子邮箱"+str3); //显示信息
+}
+function Select(){
+	form1.address.focus();
+	form1.address.select();
+}
+</script>
+<form action="" onReset = "return allowReset()" onSubmit ="return check1()" name="form1" method="post"  onload="Select()"> 
+     姓名：<input type="text" name="name" value=""><br>
+     地址：<input type="text" name="address" value="" size="20" maxlength="30" onmouseover = "this.value='北京欢迎您'"><br>
+     电子邮箱：<input type="text" name="email" value=""><br>
+     密码：<input type="password" name="password">
+     <input type="radio" name="gender" checked>男
+     <input type="radio" name="gender">女<br>
+
+
+     <input type="reset">
+     <input type="submit">
+</form>
+<div onClick ="show()" align="center">查看信息</div>
+
+</body>
+</html>

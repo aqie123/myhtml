@@ -1,0 +1,69 @@
+.banner{
+	border: 1px solid red;
+	width: 790px;
+	height: 340px;
+	margin:0 auto;
+	overflow: hidden;
+    position:relative;
+}
+/*图片区块*/
+.banner .bpicture{
+	width: 790px;
+	height: 340px;
+	position:relative;
+}
+.banner .bpicture ul li{
+	width: 790px;
+	height: 340px;
+	list-style: none;
+	z-index: 1;
+	position:absolute;
+	top:0;
+	left:790px;
+}
+.banner .bpicture ul li.first{
+	left:0;
+}
+/*底部数字区块*/
+.banner .num_btn{
+	width: 790px;
+	height: 40px;
+	position:absolute;
+	bottom: 20px;
+    left:0;
+    text-align: center;
+    z-index: 2;
+
+}
+.banner .num_btn ul li{
+	width: 40px;
+	height: 40px;
+	list-style: none;
+	font-size: 15px;
+	display: inline-block;
+	line-height: 40px;
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: #7F7C7C;
+}
+.banner .num_btn ul li.active{
+	background-color:#FF0;
+}
+/*左右按钮*/
+.banner .btnslide{
+	z-index: 2;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top:50%;
+	margin-top: -30px;
+	display: none;
+}
+.banner .left{
+	left:0;
+	background:url(../picture/3-img/arrow.png)right top;
+}
+.banner .right{
+	right:0;
+	background:url(../picture/3-img/arrow.png)right bottom ;
+}

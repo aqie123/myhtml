@@ -1,0 +1,99 @@
+*{
+	margin: 0;padding: 0;
+}
+body{
+	
+	background:url('../picture/6_qqzoneimages/bg.jpg') no-repeat fixed;
+    background-size: cover;
+}
+/*qq空间留言板样式开始*/
+.text-main{
+	width:600px;
+	
+	background: white;
+	margin:400px auto 0;
+	border-radius:5px;
+	padding: 10px 15px;
+
+}
+.text-main .title{
+	color: red;
+text-align: center;
+font-size:14px;
+line-height: 30px;
+font-family: "微软雅黑";
+}
+.text-main .text{
+	width: 599px;
+	height: 130px;
+	border: 1px solid #ddd;
+	margin:10px auto;
+}
+.text-main .btn-box{
+	position:relative;
+
+}
+.text-main .btn-box img{
+	/*margin-left: 26px;*/
+}
+.text-main .btn-box a{
+	float: right;
+   /* margin-right: 26px;*/
+    padding: 5px 10px;
+    background: #ff6600;
+    color:#fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.text-main .btn-box ul{
+	width: 392px;
+	height: 89px;
+	background: #fff;
+	border:1px solid red;
+	padding: 5px;/*上下为5像素*/
+	position: absolute;/*定位*/
+	left:21px;
+	top:21px;
+	display: none;
+	
+}
+.text-main .btn-box ul li{
+	float: left;
+	list-style: none;
+	margin:3px; 每个想当一个小盒子，外边距
+	/*padding: 2px; 好像没什么区别*/
+}
+.text-main .btn-box ul li img{
+	/*padding: 5px 5px;*/
+}
+.main{
+	width:630px;
+	/*background: white;*/
+	margin:0 auto;
+	
+	
+}
+
+.main .con{
+	width:600px;
+	/*height:200px; 高度去掉，文字自适应*/
+	background:#fff;
+	padding: 0px 15px;
+	margin-top: 20px;
+}
+.main .con .top{
+	width:600px;
+	border-bottom:1px solid #fff000;
+}
+.main .con .top img{
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+
+}
+.main .con .content{
+	color:brown;
+	font-size: 12px;
+	line-height: 30px;
+}
+/*qq空间留言板样式结束*/

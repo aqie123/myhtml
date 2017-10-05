@@ -1,0 +1,92 @@
+
+.c1{
+	width:590px;
+	height:350px;
+	margin-left: 10px;
+	background:rgba(0,0,0,0.5);/*背景透明*/
+	border-radius:20px;/*圆角*/
+	text-align: center;/*图片居中*/
+}
+.navhex{            /*中间区块 六边形导航盒子*/
+	width:550px;
+	height:350px;
+	
+	margin:0px auto;
+	
+
+}
+
+.navhex ul li{                      /* 混合选择器*/
+	position:relative;/*相对定位*/
+	list-style: none;
+	width:99px;
+	height:56px;
+	background: rgba(0,0,0,0.5);
+	float: left;
+	margin:30px 5px;
+	text-align:center;
+}
+
+.navhex ul li:hover img{/* 伪类，鼠标移上去*/
+  -webkit-transform: rotate(360deg) scale(1.5);
+   -moz-transform: rotate(360deg) scale(1.5);
+   -ms-transform: rotate(360deg) scale(1.5);
+   -o-transform: rotate(360deg) scale(1.5);
+   transform: rotate(360deg) scale(1.5);
+}
+.six{
+    margin-left:64px !important;/*提高权重*/
+}
+
+/* before 相当于在盒子内容前面，添加内容*/
+.navhex ul li:before,.navhex ul li:after{/* 两个伪类*/
+    content:"";/*伪类必须加这个属性*/
+    position:absolute;
+    left:0;
+    top:0;
+    width:99px;
+	height:56px;
+	background: rgba(0,0,0,0.5);
+	-webkit-transform: rotate(60deg);/* 谷歌内核前缀*/
+	-moz-transform: rotate(60deg);/* 火狐内核前缀*/
+	-ms-transform: rotate(60deg);/* IE内核前缀*/
+	-o-transform: rotate(60deg);/* 欧朋内核前缀*/
+	transform: rotate(60deg);/* 标准前缀*/
+
+}
+.navhex ul li:after{
+	
+	-webkit-transform: rotate(-60deg);/* 谷歌内核前缀*/
+	-moz-transform: rotate(-60deg);/* 火狐内核前缀*/
+	-ms-transform: rotate(-60deg);/* IE内核前缀*/
+	-o-transform: rotate(-60deg);/* 欧朋内核前缀*/
+	transform: rotate(-60deg);/* 标准前缀*/
+
+}
+.navhex ul li img{
+	position: absolute;
+	z-index: 900;/* 层级越大优先级越大*/
+	/*margin-left:-40px;
+	margin-top:-40px;
+	left:50%;
+	top:50%;
+	*/
+	left:0;
+	top:0;
+	right:0; 
+	bottom:0;
+    margin:auto;
+    transition:0.5s;/* cs3 动画过度*/
+}
+/*自适应居中
+第一种：margin:50%;padding
+第二种：position:absolute;left:%;top:%;
+第三种：positionabsolute;
+        left:50%;top:50%;
+        margin-left:-40px;margin-top:-40px;
+第四种：positionabsolute;
+        left:0;top:0;right:0;bottom:0;
+        margin:auto;
+
+*/
+

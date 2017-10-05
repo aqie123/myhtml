@@ -1,0 +1,26 @@
+.p4{
+	width:1080px;
+	height:500px;
+
+	margin:50px auto;
+	border:1px solid green;
+
+}
+.p4 ul li{
+	list-style: none;
+	width:250px;
+	height: 500px;
+	
+	float:left;
+	margin:10px;
+
+
+}
+.p4 ul li div{
+	width: 250px;
+	box-shadow: 0px 0px 0px #000;/*边框阴影*/
+	padding: 5px;
+	margin:5px;
+
+
+}
